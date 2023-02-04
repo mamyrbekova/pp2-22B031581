@@ -1,11 +1,11 @@
-# l = list(map(int, input().split()))
-l = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-k = int((l // 2) + 1)
-def prm(l):
-    for i in range(2, k):
-        primes = list(filter(lambda x: x % i == 0, l))
+l = [int(i) for i in input().split()]
+primes = range(2, 100000)
+s = set()
+s1 = set(l)
+for i in range(2, len(l)):
+    primes = filter(lambda x: x == i or x % i, primes)
+    for j in primes:
+        s.add(j)
 
-    print(primes)
 
-
-prm(l)
+print(*s.intersection(s1))
