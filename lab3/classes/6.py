@@ -1,4 +1,4 @@
-l = [int(i) for i in input().split()]
+l = list(map(int, input().split()))
 primes = range(2, 100000)
 s = set()
 s1 = set(l)

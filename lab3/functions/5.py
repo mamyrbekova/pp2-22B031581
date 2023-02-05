@@ -11,4 +11,4 @@ def permut(string, i=0):
         permut(words, i + 1)
 
 
-print(permut('yup'))
+print(permut('nope'))
