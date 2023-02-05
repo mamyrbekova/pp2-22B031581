@@ -22,10 +22,12 @@ class Bank:
 
 
 a = Bank("amina", 100)
-a.deposit(50)
-print(a.balance)
-a.withdraw(100)
-print(a.balance)
+# a.deposit(50)
+#
+# print(a.balance)
+# a.withdraw(100)
+# print(a.balance)
+print(a.owner)
 
 
 
