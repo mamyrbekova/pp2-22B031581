@@ -1,10 +1,10 @@
 import re
 
-txt = "CamelCaseString"
-def camel(txt):
+s = "CamelCaseString"
+def camel(s):
     pattern = re.compile(r'(?<!^)(?=[A-Z])')
-    snake = pattern.sub('_', txt).lower()
+    snake = pattern.sub('_', s).lower()
     return snake
 
 
-print(camel(txt))
+print(camel(s))

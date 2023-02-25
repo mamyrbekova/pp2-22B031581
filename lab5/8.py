@@ -1,8 +1,8 @@
 import re
-s = "PythonProgram"
+txt = "PythonProgram"
 def split(s):
-    x = re.findall('[A-Z][^A-Z]*', s)
+    x = re.findall('[A-Z][^A-Z]*', txt)
     return " ".join(x)
 
 
-print(split(s))
+print(split(txt))
